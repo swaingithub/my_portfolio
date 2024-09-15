@@ -1,0 +1,83 @@
+/* src/components/Projects.css */
+
+/* Projects Section Styling */
+.projects-section {
+    padding: 4rem 2rem;
+    background: #f5f7fa; /* Light background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Light shadow for card */
+    width: 300px; /* Fixed width for consistency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+.project-icon {
+    font-size: 3rem;
+    color: #ffffff; /* Icon color */
+    background: #4caf50; /* Background color for the icon */
+    border-radius: 50%; /* Makes the container a circle */
+    padding: 1rem;
+    display: inline-flex; /* Aligns items in the center */
+    align-items: center; /* Centers icon vertically */
+    justify-content: center; /* Centers icon horizontally */
+    width: 40px; /* Fixed width for circle */
+    height: 40px; /* Fixed height to match width */
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .projects-title {
+        font-size: 2rem;
+    }
+    
+    .project-card {
+        width: 100%;
+        max-width: 400px; /* Ensure responsiveness */
+    }
+}

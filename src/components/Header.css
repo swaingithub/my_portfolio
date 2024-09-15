@@ -1,0 +1,92 @@
+/* src/components/Header.css */
+
+/* Professional Header with curved edges */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: #f4f4f9; /* Light background for a clean look */
+    color: #333333;
+    border-bottom-left-radius: 50px; /* Curved edge on bottom left */
+    border-bottom-right-radius: 50px; /* Curved edge on bottom right */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: 1px solid #e6e6e6; /* Light border for clean separation */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo Styling */
+.header .logo img {
+    width: 50px; /* Adjusted width to fit your logo nicely */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.header .logo img:hover {
+    transform: scale(1.1); /* Slight hover effect for the logo */
+}
+
+/* Navigation links styling */
+.header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    font-size: 1.1rem;
+}
+
+.header nav ul li a {
+    color: #333333; /* Dark gray text for a classic look */
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    border-bottom: 2px solid #50b3a2; /* Elegant green underline on hover */
+    color: #50b3a2; /* Text color changes to green on hover */
+}
+
+/* Burger Icon for mobile */
+.burger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #333333;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .header nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        background-color: #ffffff; /* Clean white for mobile menu */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        z-index: 999;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .header nav ul.nav-active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}

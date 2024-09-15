@@ -1,0 +1,147 @@
+/* src/components/About.css */
+
+/* About Section Styling */
+.about-section {
+    padding: 6rem 2rem;
+    background: #f4f4f9; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* About Content Styling */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Image Styling */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.about-image img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 8px solid #50b3a2; /* Elegant green border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.1); /* Slight hover effect for image */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+/* Text Styling */
+.about-text {
+    flex: 2;
+    max-width: 600px;
+    color: #333; /* Dark gray text for readability */
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    color: #50b3a2; /* Elegant green for the heading */
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.about-text p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #666; /* Medium gray text for the paragraph */
+    margin-bottom: 2rem;
+}
+
+.about-btn {
+    display: inline-block;
+    background-color: #50b3a2; /* Elegant green for the button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 1rem; /* Space between buttons */
+}
+
+.about-btn:hover {
+    background-color: #3e8e8e; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+/* Resume Button Styling */
+.resume-btn {
+    background-color: #50b3a2; /* Blue color for resume button */
+}
+
+.resume-btn:hover {
+    background-color: #3e8e8e; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-btn {
+        display: block;
+        margin: 1rem auto; /* Centering buttons on mobile */
+    }
+}
+.resume-icon {
+    margin-right: 0.5rem; /* Space between icon and text */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,135 @@
+/* src/components/Skills.css */
+
+/* Skills Section Styling */
+.skills-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light gradient background */
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Title Styling */
+.skills-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* Skills Wrapper */
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Skill Category Styling */
+.skill-category {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    text-align: center;
+    width: 100%; /* Full width on small screens */
+    max-width: 320px; /* Consistent width on larger screens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px); /* Elevated effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+/* Skill Icon Styling */
+.skill-icon {
+    font-size: 2.5rem;
+    color: #50b3a2; /* Vibrant color for icons */
+    margin-bottom: 1rem;
+}
+
+/* Skill Title Styling */
+.skill-category h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+/* Skill List Styling */
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* Skill Item Styling */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Skill Text Styling */
+.skill span {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Skill Bar Styling */
+.skill-bar {
+    background: #e0e0e0;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    width: 100%;
+    height: 10px; /* Adjusted for better visibility */
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+}
+
+.skill-progress {
+    height: 100%;
+    transition: width 0.5s ease; /* Smooth transition for progress bar */
+    border-radius: 8px; /* Rounded corners to match the bar */
+}
+
+/* Skill Progress Bars */
+.android-progress { width: 75%; background: #4caf50; }
+.flutter-progress { width: 70%; background: #02569b; }
+.react-native-progress { width: 80%; background: #61dafb; }
+.figma-progress { width: 85%; background: #ff5e57; }
+.photoshop-progress { width: 80%; background: #26c6da; } /* Light blue for Photoshop */
+.nodejs-progress { width: 80%; background: #8cc84b; }
+.laravel-progress { width: 70%; background: #ff2d20; } /* Laravel color */
+.mysql-progress { width: 85%; background: #00aaff; }
+.mssql-progress { width: 70%; background: #0078d4; }
+.dsa-progress { width: 75%; background: #ff6f61; }
+.cpp-progress { width: 70%; background: #f7df1e; }
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 2rem;
+    }
+    
+    .skill-category {
+        width: 100%;
+        max-width: none; /* Remove fixed width on smaller screens */
+    }
+    
+    .skill span {
+        font-size: 0.8rem;
+    }
+    
+    .skill-bar {
+        height: 8px; /* Thinner bar for mobile */
+    }
+}
