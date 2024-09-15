@@ -23,13 +23,13 @@ const Footer = () => {
                 <div className="footer-section social">
                     <h2>Connect Me</h2>
                     <div className="social-links">
-                        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/raka1/" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faLinkedin} className="social-icon linkedin" />
                         </a>
-                        <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/swaingithub" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faGithub} className="social-icon github" />
                         </a>
-                        <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://x.com/SwainRakesh990?t=6SM2WvjGah7ZMTovVA2k-A&s=09" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faTwitter} className="social-icon twitter" />
                         </a>
                     </div>
