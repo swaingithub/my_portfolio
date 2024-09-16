@@ -1,0 +1,55 @@
+/* Custom Cursor Styles with Fire Effect */
+.custom-cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Outer ring */
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 69, 0, 0.5) 0%, rgba(255, 140, 0, 0.3) 50%, rgba(255, 215, 0, 0) 100%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: width 0.15s ease, height 0.15s ease, border 0.15s ease, transform 0.1s ease-out;
+  animation: flickerAnimation 1.5s infinite;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.8); /* Inner dot */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+}
+
+/* Hover Effect on Interactive Elements */
+.custom-cursor-hover {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.6) 0%, rgba(255, 69, 0, 0.4) 50%, rgba(255, 215, 0, 0) 100%);
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+body {
+  cursor: none; /* Disable default cursor */
+}
